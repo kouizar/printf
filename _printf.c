@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 {
 	int i, printed = 0, printed_chars = 0;
 	int flags, width, precision, size, buffe_index = 0;
-	va_args args;
+	va_list args;
 	char buffer[BUFF_SIZE];
 
 	if (format == NULL)
