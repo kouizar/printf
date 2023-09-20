@@ -3,6 +3,8 @@
 /*************************************************************************/
 /************************* PRINT UNSIGNED NUMBER *************************/
 /*************************************************************************/
+
+
 /**
  * print_unsigned - Prints an unsigned number
  * @args: List a of arguments
@@ -13,11 +15,12 @@
  * @size: Size specifier
  * Return: Number of chars printed.
  */
+
 int print_unsigned(va_list args, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
-	unsigned long int num = va_arg(args, unsigned long int);
+	unsigned int num = va_arg(args, unsigned int);
 
 	num = convert_size_unsign(num, size);
 
